@@ -3,6 +3,8 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/slider_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -60,7 +62,12 @@ class MyHomePage extends StatelessWidget {
                   .shadowXl
                   .make()
                   .p16(),
-              30.heightBox,
+              20.heightBox,
+              SliderWidget(
+                min: 0,
+                max: 100,
+              ).centered(),
+              20.heightBox,
               HStack(
                 [
                   FlatButton.icon(
